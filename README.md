@@ -1,6 +1,6 @@
 # Cursor Configuration Repository
 
-Shared Cursor configurations to standardize AI-assisted development workflows.
+Shared Cursor configurations for Next.js App Router projects to standardize AI-assisted development workflows.
 
 ## Repository Structure
 
