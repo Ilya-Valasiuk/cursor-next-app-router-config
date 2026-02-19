@@ -65,9 +65,7 @@ After creating a component, verify every item:
 
 ### Props
 - [ ] Props defined as `type Props` (not `interface`)
-- [ ] Required props listed first
-- [ ] Optional props listed second
-- [ ] Function props (`onClick`, `onSubmit`, etc.) listed last
+- [ ] Props ordered: required → optional → function callbacks
 - [ ] `React.FC<Props>` used (or `React.FC` if no props)
 
 ### Structure
