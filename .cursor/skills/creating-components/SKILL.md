@@ -7,15 +7,6 @@ description: Scaffolds React components following project conventions for naming
 
 ## Workflow
 
-Determine the component type, then follow the creation steps below.
-
-**Page component?** → See "Page component" workflow
-**Shared/common component?** → Place in `src/components/common/[component-name]/`
-**Page-specific component?** → Place in `src/components/[page-name]/components/[component-name]/`
-**Sub-component of an existing component?** → Place in `[parent]/components/[component-name]/`
-
-### Creation steps
-
 Copy this checklist and track progress:
 
 ```
@@ -29,19 +20,16 @@ Component Progress:
 
 **Step 1: Determine placement**
 
-Ask the user (or infer from context):
-- Is this a shared component or page-specific?
-- Which page does it belong to (if page-specific)?
-- Does it need sub-components?
+Ask the user (or infer from context), then pick the target path:
+
+- **Page component?** → See [page-component.md](page-component.md)
+- **Shared/common component?** → `src/components/common/[component-name]/`
+- **Page-specific component?** → `src/components/[page-name]/components/[component-name]/`
+- **Sub-component of existing component?** → `[parent]/components/[component-name]/`
 
 **Step 2: Create folder structure**
 
-Create a kebab-case folder in the appropriate location:
-
-```
-src/components/common/[component-name]/          # shared
-src/components/[page-name]/components/[component-name]/  # page-specific
-```
+Create a kebab-case folder in the appropriate location. For diagrams of each scenario, see [folder-structures.md](folder-structures.md).
 
 **Step 3: Create component file**
 
@@ -105,18 +93,9 @@ After creating a component, verify every item:
 
 ---
 
-## Page component
-
-Page components live in `src/app/` and render a main component from `src/components/[page-name]/`.
-
-**With i18n:** `src/app/[locale]/[route-name]/page.tsx`
-**Without i18n:** `src/app/[route-name]/page.tsx`
-
-The page file exports `[RouteNamePage]` as a named export. Keep logic out of page files; load data and delegate rendering to `src/components/[page-name]/[PageName].tsx`.
-
----
-
 ## Additional resources
 
+- For page component conventions, see [page-component.md](page-component.md)
+- For folder structure diagrams, see [folder-structures.md](folder-structures.md)
 - For naming, export, and props conventions, see [reference.md](reference.md)
-- For code templates and folder structure diagrams, see [examples.md](examples.md)
+- For code templates, see [examples.md](examples.md)
