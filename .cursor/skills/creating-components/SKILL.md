@@ -21,7 +21,7 @@ Component Progress:
 **Step 1: Determine placement**
 
 Infer from context if possible, otherwise ask the user. 
-See [placement.md](placement.md) for paths and conventions for each type:
+See [references/placement.md](references/placement.md) for paths and conventions for each type:
 
 - Shared (common) component
 - Page-specific component
@@ -31,17 +31,17 @@ See [placement.md](placement.md) for paths and conventions for each type:
 **Step 2: Create folder structure**
 
 Create a kebab-case folder in the appropriate location. 
-See [folder-structures.md](folder-structures.md) for diagrams of each scenario.
+See [references/folder-structures.md](references/folder-structures.md) for diagrams of each scenario.
 
 **Step 3: Create component file**
 
 Create a PascalCase `.tsx` file inside the folder.
-Follow the conventions in [reference.md](reference.md).
+Follow the conventions in [references/REFERENCE.md](references/REFERENCE.md).
 
 **Step 4: Add sub-components (if needed)**
 
 If the component needs sub-components, create a `components/` folder inside it.
-Each sub-component follows the same rules. See [placement.md](placement.md) for the sub-component pattern.
+Each sub-component follows the same rules. See [references/placement.md](references/placement.md) for the sub-component pattern.
 
 **Step 5: Validate against checklist**
 
