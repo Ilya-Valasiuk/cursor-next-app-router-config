@@ -36,9 +36,14 @@ src/components/home/
                 └── FeatureCard.tsx
 ```
 
-## Page file linking to page component
+## Page component
 
 ```
-src/app/[locale]/about-us/page.tsx   →  exports AboutUsPage
-src/components/about-us/AboutUs.tsx  →  main page component
+src/
+├── app/
+│   └── about-us/
+│       └── page.tsx                  ← exports AboutUsPage
+└── components/
+    └── about-us/
+        └── AboutUs.tsx               ← main page component
 ```
