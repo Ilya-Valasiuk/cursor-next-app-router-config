@@ -2,13 +2,10 @@
 
 A collection of reusable Agent Skills for Cursor to standardize and accelerate AI-assisted development workflows.
 
-**Documentation:** See the [complete specification](https://agentskills.io/llms.txt) for the official Agent Skills format.
-
 ## What are Agent Skills?
 
 Agent Skills are instructions that teach Cursor's AI agent how to perform specific, repeatable tasks according to your project conventions. When a skill is referenced, the agent reads its instructions and follows a defined workflow — ensuring consistent output every time.
 
-See the [Cursor Skills Documentation](https://cursor.com/docs/context/skills) for more details.
 
 ## Repository Structure
 
@@ -82,6 +79,12 @@ Static resources:
 |---|---|
 | [building-components](skills/building-components/SKILL.md) | Builds, restructures, and standardizes React components according to project conventions (placement, folder/file naming, exports, props patterns). |
 
+
+## Resources & Documentation
+
+- [Agent Skills Specification](https://agentskills.io/llms.txt) - Official format specification
+- [Cursor Skills Documentation](https://cursor.com/docs/context/skills) - Cursor-specific implementation guide
+- [Agent Skills Best Practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices) - Authoring guidelines and patterns
 
 ## License
 
